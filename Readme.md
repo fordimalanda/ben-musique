@@ -23,5 +23,5 @@ Ben Musique est un **petit projet personnel** de plateforme de musique réalisé
 1. **Cloner le repo :**
 
    ```bash
-   git clone https://github.com/ton-nom-utilisateur/ben-musique.git
+   git clone https://github.com/fordimalanda/ben-musique.git
    cd ben-musique
