@@ -1,0 +1,9 @@
+# Fichiers sensibles
+.env
+*.log
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
