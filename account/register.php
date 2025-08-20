@@ -44,13 +44,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!in_array($file_type, $allowed_types)) {
       $errors[] = "Format de photo non valide";
     } else {
-      $upload_dir = __DIR__ . '../uploads/';
+      $upload_dir = dirname(__DIR__) . '/uploads/';
       if (!is_dir($upload_dir)) mkdir($upload_dir, 0755, true);
       $extension = pathinfo($_FILES['profil_picture']['name'], PATHINFO_EXTENSION);
       $filename = uniqid('profile_', true) . '.' . $extension;
       $path = $upload_dir . $filename;
       if (move_uploaded_file($_FILES['profil_picture']['tmp_name'], $path)) {
-        $profil_picture_path = '../uploads/' . $filename;
+        $profil_picture_path = 'uploads/' . $filename;
       } else {
         $errors[] = "Erreur lors de l'envoi de la photo";
       }

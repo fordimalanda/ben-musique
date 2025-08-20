@@ -91,7 +91,7 @@ if (!$user) {
 <body>
 
 <div class="profile-container text-center">
-    <img src="<?php echo '../account/' . htmlspecialchars($user['profil_picture'] ?? 'uploads/default-profile.png'); ?>" alt="Photo de profil" class="profile-img">
+    <img src="<?php echo '../' . htmlspecialchars($user['profil_picture'] ?? 'uploads/default-profile.png'); ?>" alt="Photo de profil" class="profile-img">
 
     <h1><?= htmlspecialchars($user['prenom'] . ' ' . $user['nom']) ?></h1>
 
